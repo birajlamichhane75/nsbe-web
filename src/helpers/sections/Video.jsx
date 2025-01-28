@@ -1,17 +1,21 @@
-import React from 'react'
+import React from 'react';
 import CommonSection1 from '../ui/CommonSection1';
 
 const Video = () => {
-    return ( 
-        <div>
+    return (
+        <div className="video-container">
+            {/* Background Video */}
+            <video className="background-video" autoPlay loop muted>
+                <source src='/videos/video1.mp4' type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
             <CommonSection1>
-                <div>
-                    <div>Text goes here</div>
-                    <div>video goes here</div>
+                <div className="content ">
                 </div>
             </CommonSection1>
         </div>
-     );
+    );
 }
- 
+
 export default Video;
