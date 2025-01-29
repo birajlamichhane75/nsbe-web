@@ -3,24 +3,25 @@ import Image from 'next/image';
 import React from 'react'
 import logo from '../../../../public/images/logo.jpg'
 import logo1 from '../../../../public/images/logo1.png'
+import Link from 'next/link';
 
 const NavBar = () => {
     return (
-        <section className='absolute w-full'>
+        <section className='fixed left-[50%] translate-x-[-50%] z-50 w-[85%]'>
             <CommonSection>
-                <div className='nav text-white bg-black fixed z-50 w-[85%] mx-auto rounded-full hidden md:flex'>
+                <div className='nav text-white  mx-auto hidden md:flex rounded-full bg-black w-full'>
                     <div className='w-full h-[100%] flex flex-row justify-between items-center px-16'>
-                        <div className='flex flex-row gap-2 items-center justify-center'>
+                        <Link href = '/' className='flex flex-row gap-2 items-center justify-center'>
                             <Image src={logo} height={50} width={50} alt='' className='h-1rem py-2' />
 
                             <h4 className='font-bold'>HTU-NSBE</h4>
-                        </div>
+                        </Link>
                         <div>
                             <ul className='menu grid grid-flow-col h-full'>
-                                <li className=''>Home</li>
-                                <li>About</li>
-                                <li>Contact</li>
-                                <li>Events</li>
+                                <li><Link href='/'>Home</Link></li>
+                                <li><Link href='/about' >About</Link></li>
+                                <li><Link href='/events' >Events</Link></li>
+                                <li><Link href='/contact' >Contact</Link></li>
                             </ul>
                         </div>
                     </div>

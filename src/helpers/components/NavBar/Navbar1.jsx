@@ -13,7 +13,7 @@ const NavBar1 = () => {
     return (
         <section className='absolute w-full'>
             <CommonSection>
-                <div className={`${openMenu ? 'h-fit rounded-xl items-start pt-2 pb-8 ' : 'h-auto items-center'} nav justify-between text-white bg-black fixed z-50 w-[85%] mx-auto rounded-full flex px-10 md:hidden`}>
+                <div className={`${openMenu ? 'h-[70vh] rounded-xl items-start pt-2 pb-8' : 'h-auto items-center'} nav justify-between text-white bg-black fixed z-50 w-[85%] mx-auto rounded-full flex px-10 md:hidden`}>
                         <div className='flex flex-col gap-5'>
                             <div className='flex flex-row gap-2 items-center justify-center'>
                                 <Image src={logo} height={30} width={30} alt='' className='h-1rem py-2' />
@@ -28,7 +28,7 @@ const NavBar1 = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div onClick={() => setopenMenu(!openMenu)}>
+                        <div className = "cursor-pointer hover:opacity-80" onClick={() => setopenMenu(!openMenu)}>
                             {
                                 openMenu ?<X /> :  <Menu /> 
                             }

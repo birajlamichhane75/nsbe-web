@@ -177,24 +177,24 @@ input, textarea, select, button {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.menu li{
+.menu li a{
     padding:.5rem 3rem;
     font-size: 1.3rem;
     transition: .15s;
 }
 
-.menu li:hover{
-  background-color: red;
-  border-radius:50rem;
+.menu li a:hover{
+  background-color: rgba(240, 255, 255, 0.566);
+  border-radius:5rem;
   color: black;
 }
-.small-menu ul li{
+.small-menu ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
   padding:.2rem .5rem;
 }
-.small-menu ul li:hover{
+.small-menu ul li a:hover{
   background-color: red;
   border-radius:3rem;
   color: black;
@@ -204,7 +204,6 @@ input, textarea, select, button {
 /* home Video */
 .video-container {
   position: relative;
-  height: 100vh; /* Adjust height as needed */
   overflow: hidden;
 }
 

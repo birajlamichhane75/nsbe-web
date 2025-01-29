@@ -8,7 +8,7 @@ export default function Home() {
       <div>
         <NavBar />
         <NavBar1 />
-        <HomeBanner title="ABOUT US" />
+        <HomeBanner title="Contact Us" />
       </div>
 
   )
