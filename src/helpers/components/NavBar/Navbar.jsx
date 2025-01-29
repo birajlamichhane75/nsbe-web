@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <section className='absolute w-full'>
             <CommonSection>
-                <div className='nav text-white bg-black fixed z-50 w-[85%] flex mx-auto rounded-full'>
+                <div className='nav text-white bg-black fixed z-50 w-[85%] mx-auto rounded-full hidden md:flex'>
                     <div className='w-full h-[100%] flex flex-row justify-between items-center px-16'>
                         <div className='flex flex-row gap-2 items-center justify-center'>
                             <Image src={logo} height={50} width={50} alt='' className='h-1rem py-2' />

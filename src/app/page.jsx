@@ -1,4 +1,5 @@
 import NavBar from '@/helpers/components/NavBar/Navbar'
+import NavBar1 from '@/helpers/components/NavBar/Navbar1'
 import Calender from '@/helpers/sections/calander'
 import FATSlider from '@/helpers/sections/fatslider'
 import GBMSlide from '@/helpers/sections/gbmslide'
@@ -11,6 +12,7 @@ export default function Home() {
   return (
       <div>
         <NavBar />
+        <NavBar1 />
         <HomeBanner title="Welcome To HTU NSBE family!" />
         <HelpFund />
         <Video />

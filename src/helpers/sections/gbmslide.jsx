@@ -6,7 +6,7 @@ const GBMSlide = () => {
     return ( 
         <div>
             <CommonSection1>
-                <Swiper eff="flip" preview={1}/>
+                <Swiper eff="" preview={1}/>
             </CommonSection1>
         </div>
      );
