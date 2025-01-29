@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import logo from '../../../../public/images/logo.jpg'
 import logo1 from '../../../../public/images/logo1.png'
 import { Cross, CrossIcon, Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 const NavBar1 = () => {
     const [openMenu, setopenMenu] = useState(false);
@@ -20,11 +21,11 @@ const NavBar1 = () => {
                                 <h4 className='font-bold'>HTU-NSBE</h4>
                             </div>
                             <div className={`${openMenu ? 'flex ' : 'hidden'} small-menu`}>
-                                <ul className='flex flex-col gap-6'>
-                                    <li>Home</li>
-                                    <li>About</li>
-                                    <li>Events</li>
-                                    <li>Contact</li>
+                                <ul className='flex flex-col gap-4 text-3xl'>
+                                <li><Link href='/'>Home</Link></li>
+                                <li><Link href='/about' >About</Link></li>
+                                <li><Link href='/events' >Events</Link></li>
+                                <li><Link href='/contact' >Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
