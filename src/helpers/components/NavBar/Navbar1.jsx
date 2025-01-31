@@ -10,7 +10,6 @@ import Link from 'next/link';
 const NavBar1 = () => {
     const [openMenu, setopenMenu] = useState(false);
 
-
     return (
         <section className='absolute w-full'>
             <CommonSection>

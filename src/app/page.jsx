@@ -1,3 +1,4 @@
+import Footer from '@/helpers/components/Footer/footer'
 import NavBar from '@/helpers/components/NavBar/Navbar'
 import NavBar1 from '@/helpers/components/NavBar/Navbar1'
 import Calender from '@/helpers/sections/calander'
@@ -19,6 +20,7 @@ export default function Home() {
         <Calender />
         <GBMSlide />
         <FATSlider />
+        <Footer />
       </div>
 
   )
