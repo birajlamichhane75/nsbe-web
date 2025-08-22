@@ -18,10 +18,16 @@ import Image from 'next/image';
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default ({ eff, preview }) => {
+    const images = [
+        '/images/homeimage/img1.jpeg',
+        '/images/homeimage/img4.jpeg',
+        '/images/homeimage/img3.jpeg',
+        '/images/homeimage/img2.jpeg',
+    ]
+
     return (
         <CommonSection1>
             <Swiper
-                // install Swiper modules
                 modules={[Keyboard, Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCube, EffectCards, EffectCoverflow, EffectCreative, EffectFlip]}
                 spaceBetween={0}
                 slidesPerView={preview}
@@ -29,31 +35,29 @@ export default ({ eff, preview }) => {
                 navigation={{
                     nextEl: '.forward',
                     prevEl: '.back',
-
                 }}
                 autoplay={{ delay: 1800 }}
                 effect={eff}
                 keyboard={{ enabled: true }}
+                className="h-[30rem]"   
             >
-                <SwiperSlide>
-                    <Image src={photo} height={500} width={500} alt='' className='w-full h-[25rem] object-cover' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={photo} height={500} width={500} alt='' className='w-full h-[25rem] object-cover' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={photo} height={500} width={500} alt='' className='w-full h-[25rem] object-cover' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={photo} height={500} width={500} alt='' className='w-full h-[25rem] object-cover' />
-                </SwiperSlide>
-                <div className='w-full absolute z-50 flex justify-between bottom-[50%] px-3'>
+                {images.map((imgsrc, index) => (
+                    <SwiperSlide key={index} className="h-full"> 
+                        <Image
+                            src={imgsrc}
+                            fill
+                            alt=''
+                            className="object-cover h-full w-full"  
+                        />
+                    </SwiperSlide>
+                ))}
+
+                <div className="w-full absolute z-50 flex justify-between bottom-[50%] px-3">
                     <div className="back left slide-btn"><ChevronLeft /></div>
                     <div className="forward right slide-btn"><ChevronRight /></div>
                 </div>
             </Swiper>
-
-
         </CommonSection1>
+
     );
 };

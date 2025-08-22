@@ -5,23 +5,38 @@ import photo from '../../../public/images/no-image.jpg'
 import Swiper from '../components/swiperr/Swiper';
 
 const HelpFund = () => {
-    return ( 
-        <div className='py-5'>
+    return (
+        <div className=" bg-black rounded-3xl mx-4">
             <CommonSection1>
-                <div className='flex flex-col gap-7'>
+                <div className="flex flex-col gap-10">
                     <div>
-                        <p className='text-xl text-justify'>The mission of the National Society of Black Engineers is “to increase the number of culturally responsible Black Engineers who excel academically, succeed professionally and positively impact the community.”</p>
+                        <p className="text-2xl md:text-3xl text-yellow-400 font-semibold text-center mb-4">
+                            The mission of the National Society of Black Engineers is
+                        </p>
+                        <p className="text-lg md:text-xl text-yellow-200 text-center italic">
+                            “to increase the number of culturally responsible Black Engineers who excel academically, succeed professionally and positively impact the community.”
+                        </p>
                     </div>
-                    <div>
-                        <Swiper eff='cube' preview={1}/>
+                    <div className="mx-auto w-full rounded-xl overflow-hidden shadow-lg border-4 border-yellow-400">
+                        <Swiper eff="cube" preview={1} images={[
+                            '/images/homeimage/img1.jpeg',
+                            '/images/homeimage/img4.jpeg',
+                            '/images/homeimage/img3.jpeg',
+                            '/images/homeimage/img2.jpeg',
+                        ]} />
                     </div>
-                    <div className='flex justify-center'>
-                    <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 uppercase">Help find our mission!</button>
+                    <div className="flex justify-center">
+                        <button
+                            type="button"
+                            className="text-black bg-yellow-400 hover:bg-yellow-500 font-bold rounded-full text-lg px-8 py-3 uppercase shadow-lg transition duration-300"
+                        >
+                            Help fund our mission!
+                        </button>
                     </div>
                 </div>
             </CommonSection1>
         </div>
-     );
+    );
 }
- 
+
 export default HelpFund;

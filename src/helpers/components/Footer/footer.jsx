@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
     return (
-        <div className='bg-black text-white py-8 md:px-4'>
+        <div className='bg-black text-white py-8 md:px-4 mt-10'>
             <div className='flex flex-col items-center justify-center gap-4'>
                 <div className="logo">
                     <Link href='/' className='flex flex-col items-center justify-center'>
@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className="f-menu flex items-center justify-center gap-12">
                     <div className="side-line"></div>
-                    <div className='flex items-center justify-center gap-8'>
+                    <div className='flex items-center justify-center gap-8 md:text-xl text-4xl'>
                         <Link href="#">Home</Link>
                         <Link href="#">About</Link>
                         <Link href="#">Contact</Link>
@@ -24,9 +24,9 @@ const Footer = () => {
                     <div className="side-line"></div>
                 </div>
 
-                <div className="social-media">
+                <div className="social-media ">
 
-                    <div className='flex items-center justify-center gap-8'>
+                    <div className='flex items-center justify-center gap-8 md:text-xl text-4xl'>
                         <Link href="#"><FaFacebook /></Link>
                         <Link href="#"><FaInstagram /></Link>
                         <Link href="#"><FaLinkedin /></Link>

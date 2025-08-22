@@ -4,6 +4,44 @@
 
 
 /* Tailwind Preflight Styles (Default Font Sizes) */
+/* Font families */
+body, p, li, ol, ul, th, td, input, textarea, select, button {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+}
+
+code, pre {
+  font-family: 'Fira Mono', monospace;
+}
+
+/* Color consistency */
+.bg-black, .bg-neutral-900, .bg-gray-900 {
+  color: #fde047 ; /* Tailwind yellow-400 */
+}
+
+.bg-yellow-400, .bg-yellow-500, .bg-yellow-300 {
+  color: #000 ;
+}
+
+/* Button consistency */
+button, .btn, .slide-btn {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Example for links *
+a {
+  transition: color 0.2s;
+}
+a {
+  color: #fde047 ;
+}
+
 
 /* Headings */
 h1 {
@@ -104,102 +142,59 @@ input, textarea, select, button {
     *{
       font-size: 100%;
     }
-    .container{
-      max-width:85rem; 
-      padding-inline: 3rem;
-    }
-    .container1{
-      max-width:55rem; 
-      padding-inline: 3rem;
-    }
+    
    
   }
   @media screen and (max-width: 1200px) {
     *{
       font-size: 90%;
     }
-    .container{
-      max-width:75rem; 
-      padding-inline: 3rem;
-    }
-    .container1{
-      max-width:45rem; 
-      padding-inline: 3rem;
-    }
+    
    
   }
   @media screen and (max-width: 968px) {
     *{
       font-size: 85%;
     }
-    .container{
-      max-width: 65rem;
-      padding-inline: 3rem;
-    }
-    .container1{
-      max-width: 35rem;
-      padding-inline: 3rem;
-    }
+    
   }
   @media screen and (max-width: 768px) {
     *{
       font-size: 70%;
     }
-    .container{
-      max-width: 65rem;
-      padding-inline: 3rem;
-    }
-
-    .container1{
-      max-width: 55rem;
-      padding-inline: 3rem;
-    }
+   
   }
 
   @media screen and (max-width: 576px) {
     *{
       font-size: 65%;
     }
-    .container{
-      max-width: 50rem;
-      padding-inline: 2rem;
-    }
-    .container1{
-      max-width: 50rem;
-      padding-inline: 2rem;
-    }
+    
   }
 
   
   
 /* #Navbar */
-.nav{
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
 
+/* Add to your globals.css or a module CSS file */
+.nav {
+  box-shadow: 0 0 5px 1px #b29400;
+}
 .menu li a{
     padding:.5rem 3rem;
     font-size: 1.3rem;
     transition: .15s;
 }
 
-.menu li a:hover{
-  background-color: rgba(240, 255, 255, 0.566);
-  border-radius:5rem;
-  color: black;
-}
+
 .small-menu ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
   padding:.2rem .5rem;
 }
-.small-menu ul li a:hover{
-  background-color: red;
-  border-radius:3rem;
-  color: black;
-  
-}
+
+
 
 /* home Video */
 .home-title{
@@ -218,7 +213,7 @@ input, textarea, select, button {
   height: 100%;
   object-fit: cover; /* Ensures the video covers the entire container */
   z-index: -1; /* Send video behind other content */
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
 }
 
 .content {
@@ -250,4 +245,8 @@ input, textarea, select, button {
   opacity: .5;
 
 
+}
+
+.text-border {
+  text-shadow: 0px 0px 3px #000;
 }

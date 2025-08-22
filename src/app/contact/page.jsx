@@ -6,8 +6,6 @@ import HomeBanner from "@/helpers/sections/homeBanner";
 export default function Home() {
   return (
       <div>
-        <NavBar />
-        <NavBar1 />
         <HomeBanner title="Contact Us" />
       </div>
 
