@@ -17,7 +17,7 @@ export default function Home() {
         <GBMSlide />
         <HelpFund />
         <OurVision />
-        <Video />
+        {/* <Video /> */}
         <Calender />
         <ChapterMembership />
         <NationalMembership />

@@ -31,7 +31,7 @@ const NationalMembership = () => {
                             className="object-contain"
                         />
                     </div>
-                    <h2 className="text-2xl font-bold text-red-500">National Membership</h2>
+                    <h2 className="text-2xl font-bold text-red-700">National Membership</h2>
                     <ul className="list-disc list-inside mt-4 space-y-2 font-bold text-center">
                         <li className='text-xl'>Attend the regional and national conference for internship and job opportunities!</li>
                         <li className='text-xl'>Qualify and earn national scholarship!</li>
@@ -39,7 +39,20 @@ const NationalMembership = () => {
                     </ul>
                 </div>
 
+                 
+
                 
+                </div>
+
+                <div className="mt-10 flex justify-center">
+                    <a href="https://nsbe.org/collegiate/" target='_blank'>
+                        <button
+                            type="button"
+                            className="text-black hover:opacity-80 hover:shadow-sm hover:shadow-black bg-black font-bold rounded-full text-lg px-8 py-3 uppercase  transition duration-300"
+                        >
+                            Join National NSBE Organization
+                        </button>
+                    </a>
                 </div>
 
 

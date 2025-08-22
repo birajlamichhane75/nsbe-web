@@ -39,7 +39,7 @@ export default ({ eff, preview }) => {
                 autoplay={{ delay: 1800 }}
                 effect={eff}
                 keyboard={{ enabled: true }}
-                className="h-[30rem]"   
+                className="h-[20rem] md:h-[30rem]"   
             >
                 {images.map((imgsrc, index) => (
                     <SwiperSlide key={index} className="h-full"> 

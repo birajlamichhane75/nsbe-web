@@ -178,7 +178,7 @@ input, textarea, select, button {
 
 /* Add to your globals.css or a module CSS file */
 .nav {
-  box-shadow: 0 0 5px 1px #b29400;
+  box-shadow: 0 1px 1.5px 1px #b29400;
 }
 .menu li a{
     padding:.5rem 3rem;

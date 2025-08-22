@@ -28,7 +28,7 @@ const HelpFund = () => {
                     <div className="flex justify-center">
                         <button
                             type="button"
-                            className="text-black bg-yellow-400 hover:bg-yellow-500 font-bold rounded-full text-lg px-8 py-3 uppercase shadow-lg transition duration-300"
+                            className="text-black shadow-sm shadow-yellow-400 bg-yellow-400 hover:bg-yellow-500 font-bold rounded-full text-lg px-8 py-3 uppercase  transition duration-300"
                         >
                             Help fund our mission!
                         </button>

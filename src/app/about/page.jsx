@@ -7,7 +7,7 @@ export default function Home() {
   return (
       <div>
         <HomeBanner title="ABOUT US" />
-        <Aboutpdf />
+        {/* <Aboutpdf /> */}
       </div>
 
   )
