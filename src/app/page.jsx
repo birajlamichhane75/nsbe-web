@@ -5,6 +5,7 @@ import GBMSlide from '@/helpers/sections/gbmslide'
 import HelpFund from '@/helpers/sections/HelpFund'
 import HomeBanner from '@/helpers/sections/homeBanner'
 import NationalMembership from '@/helpers/sections/nationalMembership'
+import NsbeCalender from '@/helpers/sections/nsbecalender'
 import OurVision from '@/helpers/sections/ourvision'
 import Video from '@/helpers/sections/Video'
 import React from 'react'
@@ -15,10 +16,11 @@ export default function Home() {
         
         <HomeBanner title="Welcome To HTU NSBE family!" />
         <GBMSlide />
-        <HelpFund />
         <OurVision />
+        <HelpFund />
         {/* <Video /> */}
-        <Calender />
+        {/* <Calender /> */}
+        <NsbeCalender />
         <ChapterMembership />
         <NationalMembership />
 

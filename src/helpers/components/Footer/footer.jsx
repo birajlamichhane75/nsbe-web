@@ -8,20 +8,20 @@ const Footer = () => {
         <div className='bg-black text-white py-8 md:px-4 mt-10'>
             <div className='flex flex-col items-center justify-center gap-4'>
                 <div className="logo">
-                    <Link href='/' className='flex flex-col items-center justify-center'>
-                        <Image src={logo} height={50} width={50} alt='' className='h-1rem py-2' />
-                        <h4 className='font-bold'>HTU-NSBE</h4>
-                    </Link>
+                    <Link href='/' className='flex flex-col gap-3 items-center justify-center'>
+                            <Image src={logo} height={48} width={48} alt='HTU-NSBE Logo' className='rounded-full border border-yellow-100' />
+                            <h4 className='font-extrabold text-lg tracking-wide text-yellow-400'>HTU-NSBE</h4>
+                        </Link>
                 </div>
                 <div className="f-menu flex items-center justify-center gap-12">
-                    <div className="side-line"></div>
+                    {/* <div className="side-line"></div> */}
                     <div className='flex items-center justify-center gap-8 md:text-xl text-4xl'>
                         <Link href="#">Home</Link>
                         <Link href="#">About</Link>
                         <Link href="#">Contact</Link>
                         <Link href="#">Event</Link>
                     </div>
-                    <div className="side-line"></div>
+                    {/* <div className="side-line none md:flex"></div> */}
                 </div>
 
                 <div className="social-media ">
