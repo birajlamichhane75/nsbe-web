@@ -17,13 +17,8 @@ import CommonSection1 from '@/helpers/ui/CommonSection1';
 import Image from 'next/image';
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default ({ eff, preview }) => {
-    const images = [
-        '/images/homeimage/img1.jpeg',
-        '/images/homeimage/img4.jpeg',
-        '/images/homeimage/img3.jpeg',
-        '/images/homeimage/img2.jpeg',
-    ]
+export default ({ eff, preview,images }) => {
+   
 
     return (
         <CommonSection1>

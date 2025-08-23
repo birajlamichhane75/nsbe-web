@@ -17,13 +17,8 @@ import CommonSection1 from '@/helpers/ui/CommonSection1';
 import Image from 'next/image';
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default ({ eff, preview }) => {
-    const images = [
-        '/images/nsbepic4.jpg',
-        '/images/nsbepic1.jpg',
-        '/images/nsbepic3.jpg',
-        '/images/nsbepic2.jpg',
-    ]
+export default ({ eff, preview, images }) => {
+    
 
     return (
         <Swiper

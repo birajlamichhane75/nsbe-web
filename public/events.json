@@ -1,6 +1,22 @@
 [
-  { "date": "2025-08-23", "title": "First Meeting of Semester" },
-  { "date": "2025-08-25", "title": "Welcome Party" },
-  { "date": "2025-08-30", "title": "Membership Drive" },
-  { "date": "2025-09-05", "title": "General Body Meeting" }
+  {
+    "date": "2025-08-23",
+    "title": "First Meeting of Semester",
+    "details": "Kick-off meeting for the semester. Discuss plans, upcoming events, and goals for the organization."
+  },
+  {
+    "date": "2025-08-25",
+    "title": "Welcome Party",
+    "details": "A casual gathering to welcome new members and help everyone get to know each other."
+  },
+  {
+    "date": "2025-08-30",
+    "title": "Membership Drive",
+    "details": "Recruit new members for the organization. Share information about benefits, projects, and involvement opportunities."
+  },
+  {
+    "date": "2025-09-05",
+    "title": "General Body Meeting",
+    "details": "Monthly general body meeting to review past activities, plan future events, and discuss member participation."
+  }
 ]

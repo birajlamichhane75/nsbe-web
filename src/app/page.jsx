@@ -1,11 +1,11 @@
-import Calender from '@/helpers/sections/calander'
+
 import ChapterMembership from '@/helpers/sections/chapterMembership'
 import FATSlider from '@/helpers/sections/fatslider'
 import GBMSlide from '@/helpers/sections/gbmslide'
 import HelpFund from '@/helpers/sections/HelpFund'
 import HomeBanner from '@/helpers/sections/homeBanner'
 import NationalMembership from '@/helpers/sections/nationalMembership'
-import NsbeCalender from '@/helpers/sections/nsbecalender'
+import Calendar from '@/helpers/sections/nsbecalender'
 import OurVision from '@/helpers/sections/ourvision'
 import Video from '@/helpers/sections/Video'
 import React from 'react'
@@ -20,7 +20,7 @@ export default function Home() {
         <HelpFund />
         {/* <Video /> */}
         {/* <Calender /> */}
-        <NsbeCalender />
+        <Calendar />
         <ChapterMembership />
         <NationalMembership />
 
