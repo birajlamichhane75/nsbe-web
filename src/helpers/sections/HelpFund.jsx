@@ -24,7 +24,7 @@ const HelpFund = () => {
   }, []);
 
   return (
-    <div className="bg-black rounded-3xl mx-4">
+    <div className="bg-black rounded-3xl mx-4 py-10">
       <CommonSection1>
         <div className="flex flex-col gap-10">
           <div>
