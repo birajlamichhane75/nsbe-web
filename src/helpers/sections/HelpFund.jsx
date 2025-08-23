@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import CommonSection1 from "../ui/CommonSection1";
 import Swiper from "../components/swiperr/Swiper";
+import Link from "next/link";
 
 const HelpFund = () => {
   const [images, setImages] = useState([]);
@@ -43,12 +44,14 @@ const HelpFund = () => {
             />
           </div>
           <div className="flex justify-center">
-            <button
-              type="button"
-              className="text-black shadow-sm shadow-yellow-400 bg-yellow-400 hover:bg-yellow-500 font-bold rounded-full text-lg px-8 py-3 uppercase transition duration-300"
-            >
-              Help fund our mission!
-            </button>
+            <Link href="/contact">
+              <button
+                type="button"
+                className="text-black shadow-sm shadow-yellow-400 bg-yellow-400 hover:bg-yellow-500 font-bold rounded-full text-lg px-8 py-3 uppercase transition duration-300"
+              >
+                Help fund our mission!
+              </button>
+            </Link>
           </div>
         </div>
       </CommonSection1>

@@ -1,6 +1,7 @@
 import React from 'react'
 import CommonSection1 from '../ui/CommonSection1';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const NationalMembership = () => {
     return (
@@ -45,14 +46,14 @@ const NationalMembership = () => {
                 </div>
 
                 <div className="mt-10 flex justify-center">
-                    <a href="https://nsbe.org/collegiate/" target='_blank'>
+                    <Link href="https://nsbe.org/collegiate/" target='_blank'>
                         <button
                             type="button"
                             className="text-black hover:opacity-80 hover:shadow-sm hover:shadow-black bg-black font-bold rounded-full text-lg px-8 py-3 uppercase  transition duration-300"
                         >
                             Join National NSBE Organization
                         </button>
-                    </a>
+                    </Link>
                 </div>
 
 

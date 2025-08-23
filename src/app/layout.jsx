@@ -3,10 +3,38 @@ import NavBar from '@/helpers/components/NavBar/Navbar';
 import NavBar1 from '@/helpers/components/NavBar/Navbar1';
 import '@/styles/globals.css';
 
+// app/layout.js (Next.js 13+ App Router)
 export const metadata = {
-  title: 'NSBE-HTU',
-  description: "National Society of Black Engineers",
-}
+  title: "HTU NSBE | Huston-Tillotson University NSBE Chapter",
+  description: "Official Huston-Tillotson University NSBE Chapter – empowering Black engineers, fostering community, and advancing STEM leadership.",
+  keywords: [
+  "NSBE",
+  "HTU NSBE",
+  "Huston-Tillotson University",
+  "National Society of Black Engineers",
+  "Engineering",
+  "STEM",
+  "Black Engineers",
+  "Black Engineering Students",
+  "Engineering Leadership",
+  "STEM Careers",
+  "Engineering Scholarships",
+  "College Engineering Organizations",
+  "Student Engineering Chapter",
+  "Diversity in STEM",
+  "African American Engineers",
+  "Engineering Networking",
+  "STEM Events",
+  "Engineering Conferences",
+  "Engineering Mentorship",
+  "Engineering Community Huston-Tillotson"
+],
+ 
+  icons: {
+    icon: "/logo1.png",
+  },
+};
+
 
 export default function RootLayout({ children }) {
   return (

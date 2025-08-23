@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 import CommonSection1 from "../ui/CommonSection1";
+import Link from "next/link";
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(dayjs());
@@ -72,14 +73,14 @@ const Calendar = () => {
 
           {/* Show Events */}
           {events[day.format("YYYY-MM-DD")]?.map((event, i) => (
-            <a href="/events"
+            <Link href="/events"
             key={i}>
               <p
               className="text-[10px] md:text-full sm:text-sm font-medium text-black bg-yellow-200 px-1 sm:px-2 py-0.5 sm:py-1 rounded mt-1 truncate"
             >
               {event}
             </p>
-            </a>
+            </Link>
           ))}
         </div>
       ))}

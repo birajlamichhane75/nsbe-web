@@ -1,6 +1,7 @@
 import React from 'react'
 import CommonSection1 from '../ui/CommonSection1';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ChapterMembership = () => {
     return (
@@ -42,14 +43,14 @@ const ChapterMembership = () => {
 
                 {/* Join Us Now Button */}
                 <div className="mt-10 flex justify-center">
-                    <a href="">
+                    <Link href="/contact">
                         <button
                             type="button"
                             className="text-black hover:opacity-80 hover:shadow-sm hover:shadow-black bg-black font-bold rounded-full text-lg px-8 py-3 uppercase  transition duration-300"
                         >
                             Join Us Today!
                         </button>
-                    </a>
+                    </Link>
                 </div>
 
 
