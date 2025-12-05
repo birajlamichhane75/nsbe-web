@@ -12,9 +12,6 @@ Before this project, chapter updates required manual edits and multiple communic
 - Fast performance across devices  
 - Accessible layouts that support all users  
 
-## Screenshots
-(Add UI screenshots here)
-
 ## Tech Stack
 Next.js  
 TypeScript  
